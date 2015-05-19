@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+<div>
+{% if name %}
+<h2>Welcome, {{name}}!</h2>
+{% endif %}
+</div>
+<h1> Welcome to our site! </h1>
+	<br>
+	<p>Click <a href="logout">here</a> to logout.</p>
+	<a href="/db">db</a>
+{% if error %}
+	{{ error }}
+{% endif %}
+</div>
+
+{% endblock %}

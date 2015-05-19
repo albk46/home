@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div>
+
+<form method="post" action="{{ url_for('hello') }}">
+	<br>
+	<div class=form-row>
+		<input type="text" maxlength="40" class="col-4" id="name" name="name" value="" placeholder="Ваше имя">
+	</div>
+	<div class=form-row>
+		<input type="password" name="password" id="password" value="" placeholder="Пароль" name="password" maxlength="30">
+	</div>	
+	<div class=form-row>
+		<input type="text" class="col-4 tip" placeholder="Электронная почта" maxlength="100" id="email" name="email" value="">
+	</div>
+
+	<div class=form-row>
+		<input id="phone" type="text" name="phone" value="" placeholder="Номер телефона" size="20" maxlength="30">
+	</div>
+	<div class=form-row>
+		<input type="submit" value="Register">
+	
+	</div>
+</form>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+::selection{ background-color: #E13300; color: white; }
+::moz-selection{ background-color: #E13300; color: white; }
+::webkit-selection{ background-color: #E13300; color: white; }
+* {margin: 0; padding: 0;} /* обнуляем отступы */
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    color: #888;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center; /* выравниваем все содержимое body по центру */
+    background: #87CEEB; /* цвет фона для наглядности */
+    width: 1000px;
+
+    border: 3px solid red;
+    text-align: center;
+    margin:0px auto;
+
+}
+#logon{
+    margin-right: 100px;
+    border: 5px solid blue;
+    float: right;
+}
+ul.hr {
+
+    padding: 4px; /* Значение полей */
+    margin: 0;
+
+}
+ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 4px solid #000; /* Рамка вокруг текста */
+    padding: 5px; /* Поля вокруг текста */
+}
+
+#header {
+width:1000px;
+    height: 110px;
+border: 1px solid black;
+}
+
+.error {
+    color: red;
+}
+#content {
+    margin-top: 112px;
+    width:1000px;
+    height: 1110px;
+    border: 10px solid yellow;
+
+    padding: 20px;
+    zoom: 1;
+}
+
+.form-row{
+  clear: both;
+  margin: 0 0 18px;
+}
+
+#container{
+    margin: 10px;
+    border: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 0 8px #D0D0D0;
+}
