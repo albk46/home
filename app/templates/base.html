@@ -3,35 +3,28 @@
 
 <html>
   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-
   <head>
-
-
-    {% if title %}
-    <title>{{title}} - microblog</title>
-    {% else %}
-    <title>microblog</title>
-    {% endif %}
-    </head>
+    <title>Find your home</title>
+  </head>
     <body>
-
-    <div id="header">      
-
+    <div id="header">
         <div>
             <img src="{{ url_for('static', filename='logo.jpg') }}" height=110px width=130px alt="Лого" align="left"> 
-
-
         <div id='logon'>
             <ul class="hr">
                 <li><a href="/index">Home</a></li>
                 <li><a href="/login">Login</a></li>
                 <li><a href="/register">Register</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/flat_add">Добавить квартиру</a></li>
+
             </ul> 
         </div>
     </div>
     <div id='content'>
+    {{ session.__dict__['logged_in'] }}
+
         
-    <h1>RRRUUUUUUUMMMMMMBBBLE</h1>
     <hr>
     {% with messages = get_flashed_messages() %}
     {% if messages %}

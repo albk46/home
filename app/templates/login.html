@@ -5,7 +5,7 @@
 
 <h1>Please login</h1>
 <br>
-
+{{ form|pprint(form) }}
 <form method="post" action="{{ url_for('index') }}">
 	<br>
 	<div class=form-row>
@@ -19,12 +19,5 @@
 	
 	</div>
 </form>
-</div>
-
-{% if error %}
-	<p class="error"><strong>Error:</strong> {{ error }}</p>
-{% endif %}
-
-</div>
 
 {% endblock %}

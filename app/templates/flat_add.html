@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+<div id='flat_add'>
+<h2>Введите данные:</h2>
+<form method="post" action="{{ url_for('good') }}">
+	<br>
+	<div class=form-row>
+		<input type="text" maxlength="40" id="adress" name="adress" value="" size="35" placeholder="Адрес">
+	</div>
+	<div class=form-row>
+		<input type="text" name="floor" id="floor" value="" placeholder="Этаж"  size="2" maxlength="5">
+	</div>	
+	<div class=form-row>
+		<input type="text" placeholder="из всего этажей" size="13" maxlength="5" id="floor_max" name="floor_max" value="">
+	</div>
+
+	<div class=form-row>
+		<input id="square_meter" type="text" name="square_meter" value="" placeholder="Полных квадратных метров" size="25" maxlength="20">
+	</div>
+	#after insert size, min 6
+	<div class=form-row>
+		<input type="text" maxlength="20" size="25"  id="rooms" name="rooms" value="" placeholder="Количество комнат">
+	</div>
+	<div class=form-row>
+		<input type="text" name="bath_type" size="25" id="bath_type" value="" placeholder="Тип ванна/душ" maxlength="10">
+	</div>	
+	<div class=form-row>
+		<input type="text" size="25" placeholder="Аренда в месяц" maxlength="30" id="month_cost" name="month_cost" value="">
+	</div>
+
+	<div class=form-row>
+		<input id="utilities" size="25" type="text" name="utilities" value="" placeholder="Ком. услуги в месяц" size="10" maxlength="30">
+	</div>
+	<div class=form-row>
+		<input type="text" size="25" name="deposit" id="deposit" value="" placeholder="Размер депозита"  size="25" maxlength="20">
+	</div>	
+	<div class=form-row>
+		<input type="text" size="25" placeholder="Пречислите доп. инф." size="50" maxlength="100" id="amenity" name="amenity" value="">
+	</div>
+
+
+	<div class=form-row>
+		<input type="submit" value="Создать">
+	
+	</div>
+</form>
+</div>
+
+
+
+{% endblock %}
